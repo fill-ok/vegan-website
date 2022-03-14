@@ -1,0 +1,207 @@
+	<div id="kontakt-flex-2">
+								<div id="googleMap" style="width:800px;height:400px;"></div>
+
+								<script>
+									  
+									function myMap(){
+									  const uluru =   { lat: 51.186020549438794, lng:  7.2588945988328435};
+									var mapProp= {
+									  center:uluru,
+									  zoom:12,
+									  styles:[
+									  {
+										"featureType": "landscape",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#c0c0c0"
+										  },
+										  {
+											"lightness": 35
+										  }
+										]
+									  },
+									  {
+										"featureType": "landscape.natural",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#c0c0c0"
+										  },
+										  {
+											"lightness": 20
+										  }
+										]
+									  },
+									  {
+										"featureType": "landscape.natural.landcover",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#c0c0c0"
+										  }
+										]
+									  },
+									  {
+										"featureType": "landscape.natural.terrain",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#8f8e8c"
+										  }
+										]
+									  },
+									  {
+										"featureType": "poi.government",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#f0fdff"
+										  }
+										]
+									  },
+									  {
+										"featureType": "poi.park",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#d9f2da"
+										  }
+										]
+									  },
+									  {
+										"featureType": "poi.park",
+										"elementType": "labels.icon",
+										"stylers": [
+										  {
+											"color": "#47c270"
+										  }
+										]
+									  },
+									  {
+										"featureType": "poi.park",
+										"elementType": "labels.text.fill",
+										"stylers": [
+										  {
+											"color": "#0b985b"
+										  }
+										]
+									  },
+									  {
+										"featureType": "poi.school",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#ffe5f9"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#70d308"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road",
+										"elementType": "labels.text.fill",
+										"stylers": [
+										  {
+											"color": "#8f8e8c"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road.arterial",
+										"elementType": "geometry.fill",
+										"stylers": [
+										  {
+											"color": "#ebebeb"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road.arterial",
+										"elementType": "geometry.stroke",
+										"stylers": [
+										  {
+											"color": "#adadad"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road.highway",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#70d308"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road.highway.controlled_access",
+										"elementType": "geometry.fill",
+										"stylers": [
+										  {
+											"color": "#70d308"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road.highway.controlled_access",
+										"elementType": "geometry.stroke",
+										"stylers": [
+										  {
+											"color": "#70d308"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road.local",
+										"elementType": "geometry.fill",
+										"stylers": [
+										  {
+											"color": "#fafdff"
+										  }
+										]
+									  },
+									  {
+										"featureType": "road.local",
+										"elementType": "geometry.stroke",
+										"stylers": [
+										  {
+											"color": "#adddff"
+										  }
+										]
+									  },
+									  {
+										"featureType": "water",
+										"elementType": "geometry",
+										"stylers": [
+										  {
+											"color": "#b8dcff"
+										  }
+										]
+									  }
+									]
+									};
+									const map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+								
+									const marker = new google.maps.Marker({
+									  position: uluru,
+									  map: map,
+									  title: "Dackdecker Gorselink",     
+									  animation: google.maps.Animation.BOUNCE,
+									});
+									marker.setAnimation(google.maps.Animation.BOUNCE);
+   										setTimeout(function(){ marker.setAnimation(null); }, 1500);
+								   
+									}
+								   
+								</script>
+								
+								<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-PJzdi8nnqFEaQQWsm542lqd9N1aRbYE&callback=myMap"></script>
+							</div>

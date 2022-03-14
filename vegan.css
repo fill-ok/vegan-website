@@ -1,0 +1,44 @@
+.font-color-g{
+    color: #70d308 !important;
+}
+
+.font-color-w{
+    color: white !important;
+}
+.font-color-black{
+    color: black!important;
+}
+.font-color-r{
+    color: red !important;
+}
+.font-color-b{
+    color: #0d6efd !important;
+}
+.font-color-od{
+    color: orangered !important;
+}
+
+/*-- navbar - header --*/
+
+.navbar-collapse a:hover {
+    color: #70d308 !important;
+ }
+
+   /*-- footer --*/
+
+ .icon-green i{
+    color: #70d308 !important;
+ }
+
+ .header-green h6{
+	color: #70d308 !important;
+ }
+
+
+ .nav-footer a:hover {
+    color: #70d308 !important;
+ }
+
+ .footer {
+    margin-top: 8.1rem !important;
+}
